@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <ul class="banner">
+      <ul class="header-info">
         <a href="index.html" class="logo">FOODAR</a>
         <li class="nav"><a href="register.html">Register</a></li>
         <li class="nav"><a href="#">Sign In</a></li>
@@ -35,25 +35,21 @@
       <p>Choose Your Style:</p>
       <div>
         <label>Classic: </label>
-        <input onChange="getStyleTotal()" type="radio" value="3" name="style" />
+        <input onclick="getStyleTotal()" type="radio" value="3" name="style" />
         <label>Premium: </label>
-        <input onChange="getStyleTotal()" type="radio" value="5" name="style" />
+        <input onclick="getStyleTotal()" type="radio" value="5" name="style" />
         <label>Royal: </label>
         <input
-          onChange="getStyleTotal()"
-          type="radio"
-          value="10"
-          name="style"
-        />
+          onclick="getStyleTotal()" type="radio" value="10" name="style" />
       </div>
       <div>
         <p>Add Tip:</p>
         <label>10%</label>
-        <input onChange="addTip()" type="radio" value="10" name="tip" />
+        <input onclick="addTip()" type="radio" value="10" name="tip" />
         <label>15%</label>
-        <input onChange="addTip()" type="radio" value="15" name="tip" />
+        <input onclick="addTip()" type="radio" value="15" name="tip" />
         <label>20%</label>
-        <input onChange="addTip()" type="radio" value="20" name="tip" />
+        <input onclick="addTip()" type="radio" value="20" name="tip" />
       </div>
       <div>
         <h3 id="total">Total: $<span id="totalvalue"></span></h3>
